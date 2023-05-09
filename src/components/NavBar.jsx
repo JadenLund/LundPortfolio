@@ -5,6 +5,7 @@ import Navbar from 'react-bootstrap/Navbar';
 export default function NavBar(){
     return (<>
     <Navbar fixed="top" bg="dark" variant="dark">
+        {/* add in custom logo */}
           <Navbar.Brand href="#home">
           <img
               alt=""
