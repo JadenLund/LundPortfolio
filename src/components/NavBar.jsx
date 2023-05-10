@@ -6,7 +6,7 @@ export default function NavBar(){
     return (<>
     <Navbar fixed="top" bg="dark" variant="dark">
         {/* add in custom logo */}
-          <Navbar.Brand href="#home">
+          <Navbar.Brand href="home">
           <img
               alt=""
               src="https://www.freeiconspng.com/thumbs/letter-j-icon-png/letter-j-icon-png-26.png"
@@ -15,9 +15,9 @@ export default function NavBar(){
               className="d-inline-block align-top"
             />{' '}Jaden Lund</Navbar.Brand>
           <Nav className="me-auto">
-            <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#about">About</Nav.Link>
-            <Nav.Link href="#projects">Projects</Nav.Link>
+            <Nav.Link href="home">Home</Nav.Link>
+            <Nav.Link href="about">About</Nav.Link>
+            <Nav.Link href="projects">Projects</Nav.Link>
           </Nav>
       </Navbar>
     </>
