@@ -1,26 +1,29 @@
 import Python from "../assets/certificates/Python.png";
 import Flatiron from "../assets/certificates/Flatiron.png";
+import DogIcons from "../assets/icons/DogIcons.gif";
+import Icons from "../assets/icons/Icons.gif";
+import Rectangle from "../assets/Rectangle.png";
 
 export default function About() {
   const socials = [
     {
       name: "LinkedIn",
-      icon: "1",
+      icon: Rectangle,
       link: "https://www.linkedin.com/in/jaden-lund/",
     },
     {
       name: "GitHub",
-      icon: "2",
+      icon: Rectangle,
       link: "https://github.com/JadenLund",
     },
     {
       name: "Medium",
-      icon: "3",
+      icon: Rectangle,
       link: "https://medium.com/@lundjaden",
     },
     {
       name: "Twitter",
-      icon: "4",
+      icon: Rectangle,
       link: "https://twitter.com/CodingLund",
     },
   ];
@@ -37,9 +40,9 @@ export default function About() {
   ];
 
   const examples = [
-    { image: "dog icons" },
-    { image: "css icons" },
-    { image: "extra" },
+    { image: DogIcons },
+    { image: Icons },
+    { image: Rectangle },
   ];
   return (
     <div>
@@ -66,6 +69,7 @@ export default function About() {
           //make into an equal grid
           <div>
             <a href={social.link} target="_blank">
+              <img src={Rectangle} />
               {social.name}
             </a>
           </div>
@@ -109,6 +113,12 @@ export default function About() {
           makes me a better designer and developer. I am excited to bring my
           creativity and enthusiasm to any project or team.
         </p>
+        {examples.map((example) => (
+          //make into an equal grid
+          <div>
+            <img src={example.image} />
+          </div>
+        ))}
       </div>
     </div>
   );
