@@ -1,8 +1,8 @@
-import Catmix1 from "../assets/Catmix1.jpg";
-import Catmix2 from "../assets/Catmix2.png";
-import PUPPUR1 from "../assets/PUPPUR1.png";
-import PUPPUR2 from "../assets/PUPPUR2.png";
-import PUPPUR3 from "../assets/PUPPUR3.png";
+import Catmix1 from "../assets/projectImages/Catmix1.jpg";
+import Catmix2 from "../assets/projectImages/Catmix2.png";
+import PUPPUR1 from "../assets/projectImages/PUPPUR1.png";
+import PUPPUR2 from "../assets/projectImages/PUPPUR2.png";
+import PUPPUR3 from "../assets/projectImages/PUPPUR3.png";
 export default function Home() {
   const projects = [
     //test for object in an object
