@@ -19,8 +19,6 @@ function App() {
               <Route path="/home" element={<Home />} />
               <Route path="/about" element={<About />} />
               <Route path="/projects" element={<Projects/>} />
-              {/* <Route path="/" element={<PageSetup />} /> */}
-              {/* <Route path="*" element={<Navigate to="/" replace />} /> */}
             </Routes>
     </BrowserRouter>
 </>

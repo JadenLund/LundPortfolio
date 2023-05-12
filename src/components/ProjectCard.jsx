@@ -1,17 +1,27 @@
 //use bootstrap to make cards
 import Carousel from "react-bootstrap/Carousel";
 import { Card } from "react-bootstrap";
-import Catmix from "../assets/Catmix.jpg";
+// import Catmix from "../assets/Catmix.jpg";
 import { useState } from "react";
 import Catmix2 from "../assets/Catmix2.png";
-
+//
 export default function ProjectCard() {
   const [slides, setSlides] = useState([]);
 
-  const projectOne = [
-    { id: 1, image: Catmix },
-    { id: 2, image: Catmix2 },
-  ];
+  // const projectOne = [
+  //   { id: 1, image: Catmix },
+  //   { id: 2, image: Catmix2 },
+  // ];
+
+  // const projects = [
+  //   //test for object in an object
+  //   {
+  //     id: 1,
+  //     name: project1,
+  //     image: "hi",
+  //     image: "hello",
+  //   },
+  // ];
 
   //plan
   /* Set it so that the slides is an array, and each image is mapped out for each slide? */
