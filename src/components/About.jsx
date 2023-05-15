@@ -1,52 +1,11 @@
-import Python from "../assets/certificates/Python.png";
-import Flatiron from "../assets/certificates/Flatiron.png";
-import DogIcons from "../assets/icons/DogIcons.gif";
-import Icons from "../assets/icons/Icons.gif";
 import Rectangle from "../assets/Rectangle.png";
-
 //useMemo
 //understand when a component renders
 
+import { information } from "./Information";
 export default function About() {
-  const socials = [
-    {
-      name: "LinkedIn",
-      icon: Rectangle,
-      link: "https://www.linkedin.com/in/jaden-lund/",
-    },
-    {
-      name: "GitHub",
-      icon: Rectangle,
-      link: "https://github.com/JadenLund",
-    },
-    {
-      name: "Medium",
-      icon: Rectangle,
-      link: "https://medium.com/@lundjaden",
-    },
-    {
-      name: "Twitter",
-      icon: Rectangle,
-      link: "https://twitter.com/CodingLund",
-    },
-  ];
-
-  const certificates = [
-    {
-      image: Flatiron,
-      link: "https://www.linkedin.com/posts/jaden-lund_softwareengineering-softwaredevelopment-frontenddeveloper-activity-7009215894098780160-Qsis?utm_source=share&utm_medium=member_desktop",
-    },
-    {
-      image: Python,
-      link: "https://www.linkedin.com/posts/jaden-lund_work-programming-coursera-activity-7062894026315726848-1sHY?utm_source=share&utm_medium=member_desktop",
-    },
-  ];
-
-  const examples = [
-    { image: DogIcons },
-    { image: Icons },
-    { image: Rectangle },
-  ];
+  const { socials, certificates, examples } = information;
+  console.log("socials", socials);
   return (
     <div>
       <div>
@@ -63,10 +22,12 @@ export default function About() {
           Figma, along with other design applications. I am also excited to
           expand my skill set and am currently gaining skills in Python.
         </p>
-        <a href="https://1drv.ms/b/s!Ak-4NIJkGoKahMoI3aR55YQp1MUDbw?e=CYEJKy">
+        <a
+          href="https://1drv.ms/b/s!Ak-4NIJkGoKahMoI3aR55YQp1MUDbw?e=CYEJKy"
+          target="_blank"
+        >
           Learn More about Me
         </a>
-        {/* add resume link above */}
 
         {socials.map((social) => (
           //make into an equal grid
@@ -94,7 +55,7 @@ export default function About() {
           member for any project.
         </p>
 
-        {certificates.map((certificate) => (
+        {information.certificates.map((certificate) => (
           //make into an equal grid
           <div>
             <a href={certificate.link} target="_blank">
@@ -116,7 +77,7 @@ export default function About() {
           makes me a better designer and developer. I am excited to bring my
           creativity and enthusiasm to any project or team.
         </p>
-        {examples.map((example) => (
+        {information.examples.map((example) => (
           //make into an equal grid
           <div>
             <img src={example.image} />
