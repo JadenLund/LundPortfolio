@@ -4,6 +4,9 @@ import DogIcons from "../assets/icons/DogIcons.gif";
 import Icons from "../assets/icons/Icons.gif";
 import Rectangle from "../assets/Rectangle.png";
 
+//useMemo
+//understand when a component renders
+
 export default function About() {
   const socials = [
     {
