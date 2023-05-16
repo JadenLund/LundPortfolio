@@ -3,35 +3,21 @@ import Catmix2 from "../assets/projectImages/Catmix2.png";
 import PUPPUR1 from "../assets/projectImages/PUPPUR1.png";
 import PUPPUR2 from "../assets/projectImages/PUPPUR2.png";
 import PUPPUR3 from "../assets/projectImages/PUPPUR3.png";
-export default function Home() {
-  const projects = [
-    //test for object in an object
-    {
-      id: 1,
-      name: "Catmix",
-      images: [Catmix1, Catmix2],
-    },
-    {
-      id: 2,
-      name: "PUPPUR",
-      images: [PUPPUR1, PUPPUR2, PUPPUR3],
-    },
-  ];
 
+//i need a container named projects, with each project inside that then has multiple images that will be mapped out
+export const projects = [
   {
-    projects.map((project) => (
-      <div>
-        <h1>{project.name}</h1>
-        {projects.name.map((singleProject) => {
-          <h3>{singleProject}</h3>;
-        })}
-        <img src={project.images} />
-        <h2>{project.images[0]}</h2>
-        {/* <img src={project.images} /> */}
-        {console.log("project.images: ", project.images)}
-        {/* {console.log("project.images.image: ", project.images.image)} */}
-        {/* {console.log("project.images[0]: ", project.images[0])} */}
-      </div>
-    ));
-  }
-}
+    title: "Catmix",
+    images: [Catmix1, Catmix2],
+    description:
+      "Catmix is a visually appealing and charming application that showcases an extensive collection of cat images sourced from a free api. Its simplistic yet mesmerizing graphics and delightful particles create an unparalleled user experience.  Catmix offers cat lovers a delightful and enjoyable browsing experience, making it the perfect companion for those seeking a dose of feline cuteness and joy.",
+    extra: "ReactJS | ParticleJS | The Cat API | SemanticUI",
+  },
+  {
+    title: "Puppur",
+    images: [PUPPUR1, PUPPUR2, PUPPUR3],
+    description:
+      "Puppur is an innovative application built with Ruby on Rails and React, designed to provide users with an immersive educational experience about various dog breeds. By logging in, users gain access to a wealth of information, captivating visuals, and interactive features. Puppur allows users to browse through an extensive collection of dog breeds, enabling them to favorite their preferred ones for quick reference. Additionally, users can engage with the community by leaving comments and sharing their thoughts on different dog breeds, fostering a lively and informative platform for dog enthusiasts. With Puppur, learning about dog breeds becomes an enjoyable and personalized journey, making it an indispensable tool for dog lovers of all kinds.",
+    extra: "Ruby on Rails | ReactJS | Heroku | SemanticUI",
+  },
+];
