@@ -1,25 +1,27 @@
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-
-export default function NavBar(){
-    return (<>
-    <Navbar fixed="top" bg="dark" variant="dark">
-        {/* add in custom logo */}
-          <Navbar.Brand href="home">
-          <img
-              alt=""
-              src="https://www.freeiconspng.com/thumbs/letter-j-icon-png/letter-j-icon-png-26.png"
-              width="30"
-              height="30"
-              className="d-inline-block align-top"
-            />{' '}Jaden Lund</Navbar.Brand>
-          <Nav className="me-auto">
-            <Nav.Link href="home">Home</Nav.Link>
-            <Nav.Link href="about">About</Nav.Link>
-            <Nav.Link href="projects">Projects</Nav.Link>
-          </Nav>
-      </Navbar>
-    </>
-    )
+export default function NavBar() {
+  return (
+    <nav class="font-semibold text-xl bg-nature-green grid grid-cols-3 items-center">
+      <a href="home" class="flex no-underline text-black">
+        <img
+          class="h-8 w-8 "
+          src="https://www.freeiconspng.com/thumbs/letter-j-icon-png/letter-j-icon-png-26.png"
+        />
+        <span>aden Lund</span>
+      </a>
+      <div class="flex sm:justify-center space-x-8">
+        {[
+          ["Home", "/home"],
+          ["About", "/about"],
+          ["Projects", "/projects"],
+        ].map(([title, url]) => (
+          <a
+            href={url}
+            class="p-3 hover:bg-selected-green no-underline text-black"
+          >
+            {title}
+          </a>
+        ))}
+      </div>
+    </nav>
+  );
 }

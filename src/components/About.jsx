@@ -30,7 +30,9 @@ export default function About() {
 
       <div>
         <h2>{paragraphs[1].title}</h2>
-        <p>{paragraphs[1].paragraph}</p>
+        <p className="text-sm font-medium text-gray-900">
+          {paragraphs[1].paragraph}
+        </p>
 
         {certificates.map((certificate) => (
           //make into an equal grid
