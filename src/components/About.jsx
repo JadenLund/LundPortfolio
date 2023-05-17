@@ -7,7 +7,7 @@ export default function About() {
   const { paragraphs, socials, certificates, examples } = information;
   return (
     <div>
-      <div>
+      <div class="container grid grid-flow-row">
         <h2>{paragraphs[0].title}</h2>
         <p>{paragraphs[0].paragraph}</p>
         <a
@@ -16,43 +16,39 @@ export default function About() {
         >
           Learn More about Me
         </a>
-
-        {socials.map((social) => (
-          //make into an equal grid
-          <div>
+        <div class="grid grid-cols-4">
+          {socials.map((social) => (
             <a href={social.link} target="_blank">
               <img src={Rectangle} />
               {social.name}
             </a>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
 
-      <div>
+      <div class="container grid grid-flow-ro">
         <h2>{paragraphs[1].title}</h2>
         <p className="text-sm font-medium text-gray-900">
           {paragraphs[1].paragraph}
         </p>
 
-        {certificates.map((certificate) => (
-          //make into an equal grid
-          <div>
+        <div class="grid grid-cols-2">
+          {certificates.map((certificate) => (
             <a href={certificate.link} target="_blank">
               <img src={certificate.image} />
             </a>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
 
-      <div>
+      <div class="container grid grid-flow-ro">
         <h2>{paragraphs[2].title}</h2>
         <p>{paragraphs[2].paragraph} </p>
-        {examples.map((example) => (
-          //make into an equal grid
-          <div>
+        <div class="grid grid-cols-3">
+          {examples.map((example) => (
             <img src={example.image} />
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </div>
   );
