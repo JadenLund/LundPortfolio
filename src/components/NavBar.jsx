@@ -23,7 +23,6 @@ export default function NavBar() {
             spy={true}
             smooth={true}
             duration={durationFn}
-            activeClass="active"
             class="p-3 focus:bg-clicked-green hover:bg-selected-green no-underline text-black"
           >
             {title}
