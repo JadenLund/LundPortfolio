@@ -4,7 +4,6 @@ import NavBar from "./components/NavBar";
 import Home from "./components/Home";
 import About from "./components/About";
 import Projects from "./components/Projects";
-import ProjectCard from "./components/ProjectCard";
 
 export default class Section extends React.Component {
   constructor(props) {
@@ -53,8 +52,8 @@ export default class Section extends React.Component {
     return (
       <div>
         <NavBar />
-        <ProjectCard />
-        {/* <Element name="home" id="containerElement">
+        {/* <TestContainer /> */}
+        <Element name="home" id="containerElement">
           <Home />
         </Element>
         <Element name="about" id="containerElement">
@@ -62,7 +61,7 @@ export default class Section extends React.Component {
         </Element>
         <Element name="projects" id="containerElement">
           <Projects />
-        </Element> */}
+        </Element>
       </div>
     );
   }
