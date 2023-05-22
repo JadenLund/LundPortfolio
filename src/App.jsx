@@ -52,15 +52,17 @@ export default class Section extends React.Component {
     return (
       <div>
         <NavBar />
-        <Element name="home" id="containerElement">
-          <Home />
-        </Element>
-        <Element name="about" id="containerElement">
-          <About />
-        </Element>
-        <Element name="projects" id="containerElement">
-          <Projects />
-        </Element>
+        <div class="mx-x">
+          <Element name="home">
+            <Home />
+          </Element>
+          <Element name="about">
+            <About />
+          </Element>
+          <Element name="projects">
+            <Projects />
+          </Element>
+        </div>
       </div>
     );
   }
