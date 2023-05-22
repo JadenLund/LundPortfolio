@@ -1,6 +1,10 @@
+import { Link } from "react-scroll";
 export default function NavBar() {
+  const durationFn = function (deltaTop) {
+    return deltaTop;
+  };
   return (
-    <nav class="font-semibold text-xl bg-nature-green grid grid-cols-3 items-center">
+    <nav class="sticky top-0 font-semibold text-xl bg-nature-green grid grid-cols-3 items-center">
       <a href="home" class="flex no-underline text-black">
         <img
           class="h-8 w-8 "
@@ -10,16 +14,19 @@ export default function NavBar() {
       </a>
       <div class="flex sm:justify-center space-x-8">
         {[
-          ["Home", "/home"],
-          ["About", "/about"],
-          ["Projects", "/projects"],
+          ["Home", "home"],
+          ["About", "about"],
+          ["Projects", "projects"],
         ].map(([title, url]) => (
-          <a
-            href={url}
-            class="p-3 hover:bg-selected-green no-underline text-black"
+          <Link
+            to={url}
+            spy={true}
+            smooth={true}
+            duration={durationFn}
+            class="p-3 focus:bg-clicked-green hover:bg-selected-green no-underline text-black"
           >
             {title}
-          </a>
+          </Link>
         ))}
       </div>
     </nav>

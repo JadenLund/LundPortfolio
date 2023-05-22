@@ -10,7 +10,8 @@ export default {
         extend: {
             colors: {
                 'nature-green': '#89B098',
-                'selected-green': '#72A184'
+                'selected-green': '#72A184',
+                'clicked-green': '#4A6956'
             },
             fontFamily: {
                 sans: ['Inter var', ...defaultTheme.fontFamily.sans],
