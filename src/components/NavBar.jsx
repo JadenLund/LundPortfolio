@@ -12,7 +12,7 @@ export default function NavBar() {
         />
         <span>aden Lund</span>
       </a>
-      <div class="flex sm:justify-center space-x-8">
+      <div class="flex sm:justify-center space-x-8 ">
         {[
           ["Home", "home"],
           ["About", "about"],
@@ -20,8 +20,6 @@ export default function NavBar() {
         ].map(([title, url]) => (
           <Link
             to={url}
-            spy={true}
-            smooth={true}
             duration={durationFn}
             class="p-3 focus:bg-clicked-green hover:bg-selected-green no-underline text-black"
           >
