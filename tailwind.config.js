@@ -1,22 +1,40 @@
 /** @type {import('tailwindcss').Config} */
 const defaultTheme = require('tailwindcss/defaultTheme')
+const withMT = require("@material-tailwind/react/utils/withMT");
 
-export default {
+module.exports = withMT({
     content: [
         "./index.html",
         "./src/**/*.{js,ts,jsx,tsx}",
     ],
     theme: {
         extend: {
+            animation: {
+                fadeIn: "fadeIn 2s ease-in forwards"
+            },
+            keyframes: {
+                fadeIn: {
+                    "0%": { opacity: 0 },
+                    "100%": { opacity: 1 }
+                }
+            },
+
             colors: {
                 'nature-green': '#89B098',
                 'selected-green': '#72A184',
                 'clicked-green': '#4A6956'
             },
             fontFamily: {
-                sans: ['Inter var', ...defaultTheme.fontFamily.sans],
+                // sans: ['Inter var', ...defaultTheme.fontFamily.sans],
+                'roboto': ['roboto', 'sans-serif']
+            },
+            // margin-right:
+            spacing: {
+                "x": "10%",
+                "y": "5%",
+                "Z": "1%",
             },
         },
     },
     plugins: [],
-}
+});
