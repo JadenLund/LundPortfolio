@@ -15,7 +15,11 @@ export default function About() {
             <h5 class="">{paragraph.paragraph}</h5>
             <div class="flex gap-x pt-y">
               {paragraph.links.map((link) => (
-                <a class="container mx-auto" href={link.link} target="_blank">
+                <a
+                  class="container mx-auto transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300"
+                  href={link.link}
+                  target="_blank"
+                >
                   <img src={link.image} />
                 </a>
               ))}
