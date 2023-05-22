@@ -6,9 +6,9 @@
 [remote "origin"]
 	url = git@github.com:JadenLund/LundPortfolio.git
 	fetch = +refs/heads/*:refs/remotes/origin/*
-[branch "main"]
+[branch "master"]
 	remote = origin
-	merge = refs/heads/main
+	merge = refs/heads/master
 [pull]
 	rebase = false
 [branch "crazy-experiment"]
