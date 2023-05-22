@@ -67,5 +67,4 @@ export default class Section extends React.Component {
     );
   }
 }
-
 // ReactDOM.render(<Section />, document.getElementById("example"));
