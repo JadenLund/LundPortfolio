@@ -13,7 +13,9 @@ export default function About() {
             <AnimateOnScroll reappear>
               <h1 class="font-medium pt-y">{paragraph.title}</h1>
             </AnimateOnScroll>
-            <h5 class="">{paragraph.paragraph}</h5>
+            <AnimateOnScroll reappear>
+              <h5 class="">{paragraph.paragraph}</h5>
+            </AnimateOnScroll>
             <div class="flex gap-x pt-y">
               {paragraph.links.map((link) => (
                 <a
