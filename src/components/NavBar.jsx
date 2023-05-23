@@ -4,7 +4,7 @@ export default function NavBar() {
     return deltaTop;
   };
   return (
-    <nav class="sticky top-0 font-semibold text-xl bg-nature-green grid grid-cols-3 items-center">
+    <nav class="sticky z-10 top-0 font-semibold text-xl bg-nature-green grid grid-cols-3 items-center">
       <a href="home" class="flex no-underline text-black">
         <img
           class="h-8 w-8 "
