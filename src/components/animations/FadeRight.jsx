@@ -1,7 +1,7 @@
 import { useRef } from "react";
 import { useInView } from "framer-motion";
 
-export default function Section({ children }) {
+export default function FadeRight({ children }) {
   const ref = useRef(null);
   const isInView = useInView(ref);
 
