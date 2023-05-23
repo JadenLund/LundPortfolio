@@ -8,7 +8,7 @@ export default function FadeRight({ children }) {
   return (
     <section ref={ref}>
       <span
-        class="block"
+        class="block text-lg"
         style={{
           transform: isInView ? null : "translateX(-200px)",
           opacity: isInView ? 1 : 0,

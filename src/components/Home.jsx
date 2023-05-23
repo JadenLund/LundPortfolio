@@ -8,7 +8,7 @@ export default function Home() {
         {/* class="transition duration-700 ease-in-out */}
         <h3>Front-End Software Developer with a passion for design</h3>
       </div>
-      <img src={ProfileIcon} class="py-5 px-12 items-center" />
+      <img src={ProfileIcon} class=" px-12 items-center" />
     </div>
   );
 }

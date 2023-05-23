@@ -33,6 +33,7 @@ module.exports = withMT({
                 "x": "10%",
                 "y": "5%",
                 "Z": "1%",
+                "a": "5rem",
             },
             fontSize: {
                 sm: ['14px', '20px'],

@@ -18,7 +18,7 @@ export default function Carousel({
     return () => clearInterval(slideInterval);
   }, []);
   return (
-    <div class="overflow-hidden relative ">
+    <div class="overflow-hidden relative rounded-t-lg">
       <div
         class="flex transition-transform ease-out duration-500"
         style={{ transform: `translateX(-${curr * 100}%)` }}
