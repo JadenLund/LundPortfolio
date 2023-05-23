@@ -4,6 +4,7 @@ import NavBar from "./components/NavBar";
 import Home from "./components/Home";
 import About from "./components/About";
 import Projects from "./components/Projects";
+import Bottomtext from "./components/BottomText";
 
 export default class Section extends React.Component {
   constructor(props) {
@@ -63,6 +64,7 @@ export default class Section extends React.Component {
             <Projects />
           </Element>
         </div>
+        <Bottomtext />
       </div>
     );
   }

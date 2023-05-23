@@ -1,4 +1,3 @@
-import Rectangle from "../assets/Rectangle.png";
 //useMemo
 //understand when a component renders
 
