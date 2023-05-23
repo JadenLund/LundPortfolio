@@ -51,7 +51,7 @@ export default class Section extends React.Component {
 
   render() {
     return (
-      <div>
+      <div class="bg-black">
         <NavBar />
         <div class="mx-x">
           <Element name="home">
