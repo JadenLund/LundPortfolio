@@ -1,7 +1,6 @@
-import Rectangle from "../assets/Rectangle.png";
 //useMemo
 //understand when a component renders
-
+import AnimateOnScroll from "./AnimateOnScroll";
 import { information } from "./Information";
 export default function About() {
   const { paragraphs } = information;
@@ -11,7 +10,9 @@ export default function About() {
       <div>
         {paragraphs.map((paragraph) => (
           <div class="pt-y">
-            <h1 class="font-medium pt-y">{paragraph.title}</h1>
+            <AnimateOnScroll reappear>
+              <h1 class="font-medium pt-y">{paragraph.title}</h1>
+            </AnimateOnScroll>
             <h5 class="">{paragraph.paragraph}</h5>
             <div class="flex gap-x pt-y">
               {paragraph.links.map((link) => (

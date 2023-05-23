@@ -5,3 +5,6 @@
 [ ] -  create better nav bar setup
 
 
+Plan for setting up fadein on scroll
+check for visibility, if true, then opacity goes from 0 to one and translates right
+if invisible, opacity = 0, once visible, translate right and opacity = 1
