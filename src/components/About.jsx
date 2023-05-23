@@ -2,6 +2,7 @@
 //understand when a component renders
 import AnimateOnScroll from "./AnimateOnScroll";
 import { information } from "./Information";
+import Section from "./Section";
 export default function About() {
   const { paragraphs } = information;
 
@@ -10,12 +11,13 @@ export default function About() {
       <div>
         {paragraphs.map((paragraph) => (
           <div class="pt-y">
-            <AnimateOnScroll reappear>
+            <Section>
               <h1 class="font-medium pt-y">{paragraph.title}</h1>
-            </AnimateOnScroll>
-            <AnimateOnScroll reappear>
-              <h5 class="">{paragraph.paragraph}</h5>
-            </AnimateOnScroll>
+            </Section>
+            <Section>
+              <h5 class="">{paragraph.paragraph}</h5>{" "}
+            </Section>
+
             <div class="flex gap-x pt-y">
               {paragraph.links.map((link) => (
                 <a
