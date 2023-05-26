@@ -1,5 +1,6 @@
 //useMemo
 //understand when a component renders
+import { useState } from "react";
 import { information } from "./Information";
 import Border from "./Border";
 import FadeRight from "./graphics/FadeRight";
@@ -26,7 +27,9 @@ export default function About() {
                     href={link.link}
                     target="_blank"
                   >
-                    <img src={link.image} />
+                    <img onClick={handleToggle} />
+                    {console.log(link.imageBack)}
+                    {/* if the image back != null, then flip on toggle */}
                   </a>
                 ))}
               </div>

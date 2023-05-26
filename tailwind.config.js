@@ -22,7 +22,13 @@ module.exports = withMT({
             colors: {
                 'nature-green': '#89B098',
                 'selected-green': '#72A184',
-                'clicked-green': '#4A6956'
+                'clicked-green': '#4A6956',
+                'primary': "#89b098",
+                'secondary': '#7ca490',
+                'tertiary': '#4f707',
+                'extra': '#2f4858',
+                'accent': '#320e3b',
+
             },
             fontFamily: {
                 // sans: ['Inter var', ...defaultTheme.fontFamily.sans],
