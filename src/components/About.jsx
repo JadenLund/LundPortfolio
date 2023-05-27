@@ -29,6 +29,7 @@ export default function About() {
                   >
                     <img onClick={handleToggle} />
                     {console.log(link.imageBack)}
+                    //on hover change
                     {/* if the image back != null, then flip on toggle */}
                   </a>
                 ))}
