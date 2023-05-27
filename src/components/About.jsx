@@ -7,7 +7,9 @@ import FadeRight from "./graphics/FadeRight";
 import GradiantAppear from "./graphics/GradiantAppear";
 export default function About() {
   const { paragraphs } = information;
-
+  function handleToggle() {
+    console.log("hi");
+  }
   return (
     <div class="font-roboto text-center pb-y">
       <div>
@@ -27,9 +29,10 @@ export default function About() {
                     href={link.link}
                     target="_blank"
                   >
-                    <img onClick={handleToggle} />
+                    <img onClick={handleToggle} src={link.images} />
                     {console.log(link.imageBack)}
-                    //on hover change
+
+                    {/* //on hover change */}
                     {/* if the image back != null, then flip on toggle */}
                   </a>
                 ))}
