@@ -29,7 +29,7 @@ export default function About() {
                     href={link.link}
                     target="_blank"
                   >
-                    <img onClick={handleToggle} src={link.images} />
+                    <img onClick={handleToggle} src={link.image} />
                     {console.log(link.imageBack)}
 
                     {/* //on hover change */}
