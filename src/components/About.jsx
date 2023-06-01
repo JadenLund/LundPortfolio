@@ -18,9 +18,7 @@ export default function About() {
                   class="container mx-auto transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300"
                   href={link.link}
                   target="_blank"
-                >
-                  <img src={link.image} />
-                </a>
+                ></a>
               ))}
             </div>
           </div>
