@@ -25,6 +25,7 @@ export default function About() {
                     class="container flex justify-center items-center transition ease-in-out delay-50 hover:scale-105 duration-300"
                     href={link.link}
                     target="_blank"
+                    alt="test"
                   >
                     {link.imageBack === undefined ? (
                       <img src={link.image} />
