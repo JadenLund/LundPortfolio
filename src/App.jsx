@@ -5,6 +5,8 @@ import Home from "./components/Home";
 import About from "./components/About";
 import Projects from "./components/Projects";
 import Bottomtext from "./components/BottomText";
+import Border from "./components/Border";
+import Test from "./components/test";
 
 export default class Section extends React.Component {
   constructor(props) {
@@ -51,16 +53,20 @@ export default class Section extends React.Component {
 
   render() {
     return (
-      <div class="bg-black">
+      <div>
+        {/* <Test /> */}
         <NavBar />
+
         <div class="mx-x">
           <Element name="home">
+            <Border />
             <Home />
           </Element>
           <Element name="about">
             <About />
           </Element>
           <Element name="projects">
+            <Border />
             <Projects />
           </Element>
         </div>
@@ -69,5 +75,4 @@ export default class Section extends React.Component {
     );
   }
 }
-
 // ReactDOM.render(<Section />, document.getElementById("example"));

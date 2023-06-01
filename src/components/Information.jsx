@@ -1,9 +1,16 @@
 import Python from "../assets/certificates/Python.png";
 import Flatiron from "../assets/certificates/Flatiron.png";
 import DogIcons from "../assets/icons/DogIcons.gif";
-import Moth from "../assets/icons/Moth.gif";
+import paw from "../assets/icons/paw.gif";
 import Icons from "../assets/icons/Icons.gif";
-import Rectangle from "../assets/Rectangle.png";
+import plant1 from "../assets/icons/plant1.png";
+import plant2 from "../assets/icons/plant2.png";
+import plant3 from "../assets/icons/plant3.png";
+import plant4 from "../assets/icons/plant4.png";
+import icon1 from "../assets/icons/icon1.png";
+import icon2 from "../assets/icons/icon2.png";
+import icon3 from "../assets/icons/icon3.png";
+import icon4 from "../assets/icons/icon4.png";
 
 export const information = {
   paragraphs: [
@@ -14,22 +21,26 @@ export const information = {
       links: [
         {
           name: "LinkedIn",
-          image: Rectangle,
+          image: plant1,
+          imageBack: icon1,
           link: "https://www.linkedin.com/in/jaden-lund/",
         },
         {
           name: "GitHub",
-          image: Rectangle,
+          image: plant2,
+          imageBack: icon2,
           link: "https://github.com/JadenLund",
         },
         {
           name: "Medium",
-          image: Rectangle,
+          image: plant3,
+          imageBack: icon3,
           link: "https://medium.com/@lundjaden",
         },
         {
           name: "Twitter",
-          image: Rectangle,
+          image: plant4,
+          imageBack: icon4,
           link: "https://twitter.com/CodingLund",
         },
       ],
@@ -57,7 +68,7 @@ export const information = {
         "Outside of my work as a UI/UX designer and developer, I am an avid artist and animal lover. I enjoy painting and drawing, and I find that also passionate about animal welfare, and I volunteer regularly at my local animal shelter. I believe that my outside interests and hobbies enrich my life and make me a more well-rounded person, which in turn makes me a better designer and developer. I am excited to bring my creativity and enthusiasm to any project or team.",
       links: [
         { name: "Dog Icons", image: DogIcons },
-        { name: "Business Cards", image: Moth },
+        { name: "Business Cards", image: paw },
         { name: "Logo Icons", image: Icons },
       ],
     },
