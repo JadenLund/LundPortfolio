@@ -12,34 +12,20 @@ export default function About() {
       <div>
         <Border />
         {paragraphs.map((paragraph) => (
-          <div class="pt-z">
-            <FadeRight>
-              <h1 class="font-medium pt-y">{paragraph.title}</h1>
-            </FadeRight>
-            <FadeRight>{paragraph.paragraph}</FadeRight>
-
-            <GradiantAppear>
-              <div class="flex justify-content items-center pt-y justify-around">
-                {paragraph.links.map((link) => (
-                  <a
-                    class="container flex justify-center items-center transition ease-in-out delay-50 hover:scale-105 duration-300"
-                    href={link.link}
-                    target="_blank"
-                  >
-                    {link.imageBack === undefined ? (
-                      <img src={link.image} />
-                    ) : (
-                      <Test
-                        image={link.image}
-                        name={link.name}
-                        imageBack={link.imageBack}
-                      />
-                    )}
-                    {/* test */}
-                  </a>
-                ))}
-              </div>
-            </GradiantAppear>
+          <div class="pt-y">
+            <h1 class="font-medium pt-y">{paragraph.title}</h1>
+            <h5 class="">{paragraph.paragraph}</h5>
+            <div class="flex gap-x pt-y">
+              {paragraph.links.map((link) => (
+                <a
+                  class="container mx-auto transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300"
+                  href={link.link}
+                  target="_blank"
+                >
+                  <img src={link.image} />
+                </a>
+              ))}
+            </div>
           </div>
         ))}
       </div>
