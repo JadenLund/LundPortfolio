@@ -1,5 +1,4 @@
 //useMemo
-//understand when a component renders
 import { information } from "./Information";
 import Border from "./Border";
 import FadeRight from "./graphics/FadeRight";
