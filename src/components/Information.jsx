@@ -17,7 +17,7 @@ export const information = {
     {
       title: "I am actively seeking a UI/UX designer and developer position.",
       paragraph:
-        "I want to be able to contribue my skills to a dynamic team, all while being challenged to constantly improve my skills, and become a better asset to my company. As a full stack web developer with a passion focusing on front end web design/development, I am constantly looking for new and exciting opportunities to work on innovative projects. I am passionate about designing user-friendly interfaces and crafting intuitive user experiences. I have experience working with a variety of design and development tools, including ReactJS, Ruby on Rails, Figma, along with other design applications. I am also excited to expand my skill set and am currently gaining skills in Python.",
+        "I am excited about the prospect of joining a dynamic team where I can contribute my skills and continuously enhance my abilities to become an invaluable asset to my company. As a full stack web developer with a deep passion for front-end web design and development, I am constantly on the lookout for new and exhilarating opportunities to work on innovative projects. Designing user-friendly interfaces and crafting intuitive user experiences are my driving forces. I have hands-on experience utilizing various design and development tools, including ReactJS, Ruby on Rails, Figma, and other design applications. Additionally, I am eagerly expanding my skill set and currently honing my skills in Python.",
       links: [
         {
           name: "LinkedIn",
