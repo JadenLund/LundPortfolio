@@ -8,6 +8,7 @@ export default function TestContainer() {
       <div class="grid grid-cols-2 gap-4">
         {projects.map((project) => (
           <div class=" col-span-1">
+            {console.log(project)}
             <ProjectCard>
               {[...project.images.map((s) => <img src={s} />)]}
             </ProjectCard>
